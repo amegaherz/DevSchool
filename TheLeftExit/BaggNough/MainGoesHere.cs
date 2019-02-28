@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BaggNough.Entities;
 
 namespace BaggNough
 {
@@ -31,5 +32,26 @@ namespace BaggNough
             BreakHere();
             return;
         }
-    }
+
+
+		public static void Example2() {
+			var list = new List<TreeNode<int>> {
+				new TreeNode<int>(13, 10),
+				new TreeNode<int>(12, 2),
+				new TreeNode<int>(10, 2),
+				new TreeNode<int>(14, 6),
+				new TreeNode<int>(11, 8),
+				new TreeNode<int>(5, 4),
+				new TreeNode<int>(3, 4),
+				new TreeNode<int>(9, 8),
+				new TreeNode<int>(7, 3),
+				new TreeNode<int>(6, 4),
+				new TreeNode<int>(2, 4),
+				new TreeNode<int>(8, 3)
+			};
+
+			// :TODO: А вот так сможешь? :)
+			// var sorted = list.TSort();
+		}
+	}
 }

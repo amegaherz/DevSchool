@@ -55,6 +55,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\TreeNode.cs" />
     <Compile Include="MainGoesHere.cs" />
     <Compile Include="TopSortable.cs" />
   </ItemGroup>
