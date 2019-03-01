@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{528A13DC-1417-4406-BEB8-82329646AA86}</ProjectGuid>
+    <ProjectGuid>{B5417171-22E9-45ED-8BBE-42F6EF2FC588}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BaggNough</RootNamespace>
-    <AssemblyName>BaggNough</AssemblyName>
+    <RootNamespace>TopSortable</RootNamespace>
+    <AssemblyName>TopSortable</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,18 +49,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>BaggNough.MainGoesHere</StartupObject>
+    <StartupObject>TopSortable.MainGoesHere</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainGoesHere.TSort.cs" />
     <Compile Include="Entities\TreeNode.cs" />
     <Compile Include="MainGoesHere.cs" />
-    <Compile Include="TopSortable.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

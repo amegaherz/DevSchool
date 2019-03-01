@@ -3,38 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BaggNough.Entities;
+using System.Collections;
+using TopSortable.Entities;
 
-namespace BaggNough
+namespace TopSortable
 {
-    class MainGoesHere
+    public static partial class MainGoesHere
     {
-        /// <summary>
-        /// Чтоб было удобно останавливать отладчик.
-        /// </summary>
-        public static void BreakHere() { }
-
         // Точка входа.
         // Приложение не консольное; вне отладки ничего интересного не сделает. Даже консоль не откроет.
         public static void Main()
         {
-            // Now testing: TopSortable
-            var ts = new TopSortable(5, 4);
-            ts.AddOrd(4, 1);
-            ts.AddOrds(
-                (1, 2),
-                (2, 3),
-                (5, 3));
-            // Это отношение портит граф:
-            // ts.AddOrd(2, 1);
-            var sorted = ts.Sort();
-            var allgood = ts.Check(sorted);
-            BreakHere();
-            return;
+            Example2();
         }
 
-
-		public static void Example2() {
+        public static void Example2() {
 			var list = new List<TreeNode<int>> {
 				new TreeNode<int>(13, 10),
 				new TreeNode<int>(12, 2),
@@ -50,8 +33,11 @@ namespace BaggNough
 				new TreeNode<int>(8, 3)
 			};
 
-			// :TODO: А вот так сможешь? :)
-			// var sorted = list.TSort();
+            var sorted = list.TSort();
+
+            var amirite = list.TSortCheck(sorted);
+
+            ;
 		}
 	}
 }

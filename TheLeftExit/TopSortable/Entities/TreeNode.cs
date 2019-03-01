@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaggNough.Entities {
+namespace TopSortable.Entities {
 	public class TreeNode<T> {
 		public T Id;
 		public T ParentId;
